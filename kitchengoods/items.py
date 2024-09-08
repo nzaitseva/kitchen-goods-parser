@@ -8,7 +8,6 @@ class KitchengoItem(scrapy.Item):
     ean = scrapy.Field()
     price = scrapy.Field()
     model = scrapy.Field()
-    quantity = scrapy.Field()
     image = scrapy.Field()
     source_image = scrapy.Field()
     additional_images = scrapy.Field()
