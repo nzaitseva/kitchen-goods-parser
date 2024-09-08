@@ -1,3 +1,4 @@
 scrapy
 scrapy-fake-useragent
 selenium
+requests
