@@ -4,8 +4,7 @@ from datetime import datetime
 import requests
 import scrapy
 
-from ..items import KitchengoItem
-from ..db import MySQLHandler
+from ..items import KitchengoodsItem
 
 class SmegstoreSpider(scrapy.Spider):
     name = "smeg"
@@ -16,7 +15,6 @@ class SmegstoreSpider(scrapy.Spider):
 
     def __init__(self,mode=None,images='./images',*args, **kwargs):
         super(SmegstoreSpider, self).__init__(*args, **kwargs)
-        self.db = MySQLHandler()
         self.mode = mode
         self.img_dir = images
         self.manufacturer = "Smeg"
