@@ -1,6 +1,6 @@
 import scrapy
 
-class KitchengoItem(scrapy.Item):
+class KitchengoodsItem(scrapy.Item):
     source_url = scrapy.Field()
     product_category = scrapy.Field()
     sku = scrapy.Field()
